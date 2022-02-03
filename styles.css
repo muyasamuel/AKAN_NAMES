@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Imperial+Script&family=Mochiy+Pop+One&family=Oswald:wght@200;300;400;500&family=Poppins:wght@200;300;500&family=Roboto:ital,wght@0,300;0,400;0,500;1,300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+    padding-top: 15px;
+    
+}
+header h1{
+    font-weight: bold;
+}
+header span{
+    color: var(--main-color);
+    font-weight: bold;
+}
