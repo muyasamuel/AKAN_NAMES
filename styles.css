@@ -54,12 +54,21 @@ section{
     display: flex;
     justify-content:center;
     flex-direction: column;
-   
     box-shadow: 0 0 20px 0 rgba(248, 241, 241, 0.1); 
 }
 #form-box{
+    margin-top: 10px;
     width: 70%;
     margin: auto;
+    height: 40px;
+    border-radius: 7px;
+    text-align: center;
+
+}
+::placeholder{
+    text-align:center;
+    color: black;
+    text-transform: uppercase;
 
 }
 #submit{
