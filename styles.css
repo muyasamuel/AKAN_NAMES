@@ -5,6 +5,11 @@
     box-sizing: border-box;
 }
 
+:root{
+    --main-color: #C70039;
+    --bg-color:#DAF7A6 ;
+}
+
 header{
     text-align: center;
     font-family: 'Oswald', sans-serif;
