@@ -8,12 +8,14 @@
 :root{
     --main-color: #C70039;
     --bg-color:#DAF7A6 ;
+    --text-color: #fff;
 }
 
 header{
     text-align: center;
     font-family: 'Oswald', sans-serif;
     padding-top: 15px;
+    color: var(--text-color);
     
 }
 header h1{
@@ -22,4 +24,15 @@ header h1{
 header span{
     color: var(--main-color);
     font-weight: bold;
+}
+
+
+body{
+    background-image: url(images/bg.jpg);
+    background-position: center ;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+   
+  
 }
