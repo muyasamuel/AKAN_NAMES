@@ -36,3 +36,29 @@ body{
    
   
 }
+
+
+section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    
+}
+.form{
+    margin-top: 15px;
+    width: 400px;
+    height: 350px;
+    background-color: var(--bg-color);
+    border-radius: 7px;
+    display: flex;
+    justify-content:center;
+    flex-direction: column;
+   
+    box-shadow: 0 0 20px 0 rgba(248, 241, 241, 0.1); 
+}
+#form-box{
+    width: 70%;
+    margin: auto;
+
+}
