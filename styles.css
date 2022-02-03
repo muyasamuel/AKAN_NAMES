@@ -62,3 +62,14 @@ section{
     margin: auto;
 
 }
+#submit{
+    width: 100px;
+    height: 30px;
+    margin: auto;
+    background-color: var(--main-color);
+    color: #fff;
+    outline: none;
+    border: none;
+    text-transform: uppercase;
+    border-radius: 7px;
+}
