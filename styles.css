@@ -81,4 +81,10 @@ section{
     border: none;
     text-transform: uppercase;
     border-radius: 7px;
+    transition: 0.3s ease-in;
+}
+
+#submit:hover{
+    background-color: black;
+    color: var(--text-color);
 }
