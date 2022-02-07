@@ -1,16 +1,22 @@
-
+//getting the elements from the html
 const dateBorn = document.querySelector("#date-born");
 const monthBorn = document.querySelector("#month-born");
 const yearBorn = document.querySelector("#year-born");
 const form = document.getElementById("form");
 const btn = document.getElementById("submit");
 
+//adding an array of the days of the week
+const weekDays = ["sunday", "monday", "tuesday", "wednesday", "thursday", "friday", "sarturday"];
+const femaleNames = ["Akosua", "Adwao", "Abenaa","Akua", "Yaa", "Afua", "Ama"];
+const maleNames = ["Kwasi", "Kwadwo", "Kwabena", "Kwaku", "Yaw","Kofi", "Kwame"];
 
+//adding an event listener to the button
 btn.addEventListener("click", validate);
 
 
 
 
+//function to validate the inputs
 
 function validate(e) {
        e.preventDefault()
@@ -43,7 +49,22 @@ function validate(e) {
     else if (female.checked !=true && male.checked !=true  ){
         alert("Please pick your gender");
     }
+    else{
+        //after all validations have been achieved a function to generate name is called
+        generateName()
+    }
    
+
+}
+
+function generateName(){
+    const d = new Date ();
+    let bornDay = weekDays[d.getDay()];
+    let akanMaleName = maleNames[d.getDay()];
+    let akanFemaleName = femaleNames[d.getDay()];
+    console.log(akanFemaleName)
+
+
 
 }
  
