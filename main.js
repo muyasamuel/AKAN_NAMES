@@ -58,11 +58,15 @@ function validate(e) {
 }
 
 function generateName(){
+
+    const textContent = document.querySelector(".text-content");
     const d = new Date ();
     let bornDay = weekDays[d.getDay()];
     let akanMaleName = maleNames[d.getDay()];
-    let akanFemaleName = femaleNames[d.getDay()];
-    console.log(akanFemaleName)
+    let  = femaleNames[d.getDay()];
+    
+
+    
 
 
 
