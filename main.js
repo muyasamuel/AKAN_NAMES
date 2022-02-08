@@ -6,7 +6,7 @@ const form = document.getElementById("form");
 const btn = document.getElementById("submit");
 
 //adding an array of the days of the week
-const weekDays = ["sunday", "monday", "tuesday", "wednesday", "thursday", "friday", "sarturday"];
+const weekDays = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
 const femaleNames = ["Akosua", "Adwao", "Abenaa","Akua", "Yaa", "Afua", "Ama"];
 const maleNames = ["Kwasi", "Kwadwo", "Kwabena", "Kwaku", "Yaw","Kofi", "Kwame"];
 
@@ -82,12 +82,15 @@ function generateName(){
 //using if statements to give the exact name depending with the gender
    if(male.checked == true){
       const textContent = document.querySelector(".text-content");
-      textContent.innerHTML = `You were born on a ${exactDay}. Your akan name is ${maleAkanName} ` 
+      textContent.innerHTML = `You were born on a ${exactDay}. Your akan name is ${maleAkanName} `
+      textContent.classList.add("active");
+      
    }
    
    else{
     const textContent = document.querySelector(".text-content");
     textContent.innerHTML = `You were born on a ${exactDay}. Your akan name is ${femaleAkanName} ` 
+    textContent.classList.add("active");
  }
 
    }

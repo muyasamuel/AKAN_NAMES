@@ -93,5 +93,12 @@ section{
 .select-gender{
     text-align: center;
     
-  
+}
+
+.active{
+    text-align: center;
+    background:black;
+    color: var(--text-color);
+    border-radius: 5px;
+    padding: 8px 2px ;
 }
