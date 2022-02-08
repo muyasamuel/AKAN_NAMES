@@ -10,6 +10,10 @@ const weekDays = ["sunday", "monday", "tuesday", "wednesday", "thursday", "frida
 const femaleNames = ["Akosua", "Adwao", "Abenaa","Akua", "Yaa", "Afua", "Ama"];
 const maleNames = ["Kwasi", "Kwadwo", "Kwabena", "Kwaku", "Yaw","Kofi", "Kwame"];
 
+
+
+
+
 //adding an event listener to the button
 btn.addEventListener("click", validate);
 
@@ -51,26 +55,60 @@ function validate(e) {
     }
     else{
         //after all validations have been achieved a function to generate name is called
-        generateName()
+       generateName();
     }
+
    
 
 }
 
 function generateName(){
+    //getting the exact users input date 
+   const date = `${monthBorn.value}-${dateBorn.value}-${yearBorn.value}`
 
+   const d = new Date(date);
+   //getting the day born that is given as a number
+   let day = d.getDay();
+   //getting the exact name of the day 
+   let exactDay = weekDays[day];
+   
+
+   //getting the male or female akan name after finding the exact day
+   let maleAkanName = maleNames[day];
+   let femaleAkanName = femaleNames[day];
+
+
+
+//using if statements to give the exact name depending with the gender
+   if(male.checked == true){
+      const textContent = document.querySelector(".text-content");
+      textContent.innerHTML = `You were born on a ${exactDay}. Your akan name is ${maleAkanName} ` 
+   }
+   
+   else{
     const textContent = document.querySelector(".text-content");
-    const d = new Date ();
-    let bornDay = weekDays[d.getDay()];
-    let akanMaleName = maleNames[d.getDay()];
-    let  = femaleNames[d.getDay()];
+    textContent.innerHTML = `You were born on a ${exactDay}. Your akan name is ${femaleAkanName} ` 
+ }
+
+   }
+    
+
+         
+
+
+
+    
+
+
     
 
     
 
+    
 
 
-}
+
+
  
 
 
